@@ -32,28 +32,32 @@ void loop() {
 #ifdef Serial_UART0
   if (Serial.available() > 0) {
     String s1 = Serial.readStringUntil('\n');// s1 is String type variable.
-    Serial.print("UART0->\N");
+    Serial.print("UART0->");
+    Serial.print("\N");
     Serial.println(s1);//display same received Data back in serial monitor.
   }
 #endif
 #ifdef Serial_UART1
   if (Serial1.available() > 0) {
     String s1 = Serial1.readStringUntil('\n');// s1 is String type variable.
-    Serial1.print("UART1->\N"");
-                  Serial1.println(s1);//display same received Data back in serial monitor.
-                }
+    Serial1.print("UART1->");
+    Serial1.print("\N");
+    Serial1.println(s1);//display same received Data back in serial monitor.
+  }
 #endif
 #ifdef Serial_UART2
-                  if (Serial2.available() > 0) {
-                  String s1 = Serial2.readStringUntil('\n');// s1 is String type variable.
-                  Serial2.print("UART2->\N"");
+  if (Serial2.available() > 0) {
+    String s1 = Serial2.readStringUntil('\n');// s1 is String type variable.
+    Serial2.print("UART2->");
+    Serial2.print("\N");
     Serial2.println(s1);//display same received Data back in serial monitor.
   }
 #endif
 #ifdef Serial_UART3
   if (Serial3.available() > 0) {
     String s1 = Serial3.readStringUntil('\n');// s1 is String type variable.
-    Serial3.print("UART3->\N");
+    Serial3.print("UART3->");
+    Serial3.print("\N");
     Serial3.println(s1);//display same received Data back in serial monitor.
   }
 #endif
